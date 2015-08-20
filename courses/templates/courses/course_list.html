@@ -6,7 +6,7 @@
 <div class="cards">
   {% for course in courses %}
   <div class="card">
-    <header> <a href="{% url 'course' pk=course.pk %}">{{ course.title }}</a></header>
+    <header> <a href="{% url 'courses:course' pk=course.pk %}">{{ course.title }}</a></header>
     <div class="card-copy">
       {{ course.description }}
     </div>

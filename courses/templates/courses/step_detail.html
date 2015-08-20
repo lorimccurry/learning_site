@@ -4,7 +4,7 @@
 
 {% block content %}
   <article>
-    <h2> <a href="{% url 'detail' pk=step.course.pk">{{ step.course.title }}</a></h2>
+    <h2> <a href="{% url 'courses:course' pk=step.course.pk %}">{{ step.course.title }}</a></h2>
     <h3>{{ step.title }}</h3>
     {{ step.content|linebreaks }}
   </article>
